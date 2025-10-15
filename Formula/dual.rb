@@ -5,21 +5,21 @@
 class Dual < Formula
   desc "CLI tool that manages port assignments across different development contexts"
   homepage "https://github.com/lightfastai/dual"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lightfastai/dual/releases/download/v0.1.0/dual_Darwin_x86_64.tar.gz"
-      sha256 "8c320f839260ab3a91392befbf885f58cab31281267a051b20659ec0a47fed5b"
+      url "https://github.com/lightfastai/dual/releases/download/v0.2.0/dual_Darwin_x86_64.tar.gz"
+      sha256 "1f5a271d6b22b37a36465e629c44265cdb068772917619d8dbaa982faf0f9617"
 
       def install
         bin.install "dual"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lightfastai/dual/releases/download/v0.1.0/dual_Darwin_arm64.tar.gz"
-      sha256 "043ff0a6cb8b3805e2cef89a771f1e46d719188654198562736520657ccc49f8"
+      url "https://github.com/lightfastai/dual/releases/download/v0.2.0/dual_Darwin_arm64.tar.gz"
+      sha256 "1aa1915bcad57a1ceb41f497502a6f28a14bfd52d7890d02a6af9fef96c86cf6"
 
       def install
         bin.install "dual"
@@ -29,15 +29,15 @@ class Dual < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lightfastai/dual/releases/download/v0.1.0/dual_Linux_x86_64.tar.gz"
-      sha256 "fe3f88592859b612e6a106fe2348969fa99c3c825e384d6d1f7bf05d29b052b7"
+      url "https://github.com/lightfastai/dual/releases/download/v0.2.0/dual_Linux_x86_64.tar.gz"
+      sha256 "d4a5db417af14566cdad3d97337525782f165795a58948df669a546d198b3bb3"
       def install
         bin.install "dual"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lightfastai/dual/releases/download/v0.1.0/dual_Linux_arm64.tar.gz"
-      sha256 "c65a199418276b337b8c433cf0955b1996e87128aecb1f65238c57ba18ce3d46"
+      url "https://github.com/lightfastai/dual/releases/download/v0.2.0/dual_Linux_arm64.tar.gz"
+      sha256 "227ce69282fc11177945cb10abc281b97209ebf976ee413bee005b69e7edd58a"
       def install
         bin.install "dual"
       end
