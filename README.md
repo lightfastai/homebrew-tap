@@ -1,14 +1,14 @@
-# Homebrew Tap for lightfastai
+# Homebrew Tap for Lightfast
 
-This tap contains Homebrew formulae for lightfastai projects.
+This tap is reserved for Homebrew formulae published by Lightfast.
 
-## Installation
+No formulae are currently published from this tap.
+
+## Usage
+
+When formulae are available, add the tap and install the documented formula:
 
 ```bash
 brew tap lightfastai/tap
-brew install dual
+brew install FORMULA_NAME
 ```
-
-## Available Formulae
-
-- **dual** - Port management CLI for multi-context development
